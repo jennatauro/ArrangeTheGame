@@ -1,3 +1,3 @@
 SoccerManagementTool
 ====================
-The best project ever!! :)
+You're the sexiest ;)
