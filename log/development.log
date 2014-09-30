@@ -1516,3 +1516,351 @@ Processing by TeamsController#index as HTML
   [1m[36mTeam Load (0.3ms)[0m  [1mSELECT `teams`.* FROM `teams`[0m
   Rendered teams/index.html.erb within layouts/application (3.0ms)
 Completed 200 OK in 54ms (Views: 53.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-29 23:20:01 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (6.5ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 123ms (Views: 109.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-29 23:20:02 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-29 23:20:02 -0400
+
+
+Started GET "/assets/teams.css?body=1" for 127.0.0.1 at 2014-09-29 23:20:02 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-29 23:20:02 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-29 23:20:02 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-29 23:20:02 -0400
+
+
+Started GET "/assets/teams.js?body=1" for 127.0.0.1 at 2014-09-29 23:20:02 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-29 23:20:02 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-29 23:20:02 -0400
+
+
+Started GET "/teams" for 127.0.0.1 at 2014-09-29 23:20:06 -0400
+Processing by TeamsController#index as HTML
+  [1m[35mTeam Load (0.3ms)[0m  SELECT `teams`.* FROM `teams`
+  Rendered teams/index.html.erb within layouts/application (27.3ms)
+Completed 200 OK in 80ms (Views: 57.5ms | ActiveRecord: 19.7ms)
+
+
+Started GET "/teams" for 127.0.0.1 at 2014-09-29 23:20:10 -0400
+Processing by TeamsController#index as HTML
+  [1m[36mTeam Load (0.4ms)[0m  [1mSELECT `teams`.* FROM `teams`[0m
+  Rendered teams/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 55ms (Views: 54.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/teams/new" for 127.0.0.1 at 2014-09-29 23:20:11 -0400
+Processing by TeamsController#new as HTML
+  Rendered teams/_form.html.erb (22.8ms)
+  Rendered teams/new.html.erb within layouts/application (72.4ms)
+Completed 200 OK in 123ms (Views: 121.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/teams" for 127.0.0.1 at 2014-09-29 23:20:13 -0400
+Processing by TeamsController#index as HTML
+  [1m[35mTeam Load (0.3ms)[0m  SELECT `teams`.* FROM `teams`
+  Rendered teams/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 53ms (Views: 51.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-29 23:59:36 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (10.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 119ms (Views: 107.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/teams.css?body=1" for 127.0.0.1 at 2014-09-29 23:59:36 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-29 23:59:36 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-29 23:59:36 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-29 23:59:36 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-29 23:59:37 -0400
+
+
+Started GET "/assets/teams.js?body=1" for 127.0.0.1 at 2014-09-29 23:59:37 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-29 23:59:37 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-29 23:59:37 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-29 23:59:37 -0400
+
+
+Started GET "/teams" for 127.0.0.1 at 2014-09-29 23:59:38 -0400
+Processing by TeamsController#index as HTML
+  Rendered teams/index.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 9ms
+
+SyntaxError (/Users/jennatauro/Documents/Personal Projects/SoccerManagementApp/app/views/teams/index.html.erb:18: syntax error, unexpected '<', expecting ')'
+  </tr>
+   ^
+/Users/jennatauro/Documents/Personal Projects/SoccerManagementApp/app/views/teams/index.html.erb:20: unknown regexp options - tabl
+unmatched close parenthesis: /tr>
+<% end );@output_buffer.safe_append='
+</
+/Users/jennatauro/Documents/Personal Projects/SoccerManagementApp/app/views/teams/index.html.erb:22: syntax error, unexpected tCONSTANT, expecting ')'
+...t_buffer.append=( link_to 'Back', teams_path );@output_buffe...
+...                               ^
+/Users/jennatauro/Documents/Personal Projects/SoccerManagementApp/app/views/teams/index.html.erb:23: syntax error, unexpected '|', expecting ')'
+| '.freeze;@output_buffer.appe...
+ ^
+/Users/jennatauro/Documents/Personal Projects/SoccerManagementApp/app/views/teams/index.html.erb:23: syntax error, unexpected tCONSTANT, expecting ')'
+...ffer.append=( link_to 'Register new team', new_team_path );@...
+...                               ^
+/Users/jennatauro/Documents/Personal Projects/SoccerManagementApp/app/views/teams/index.html.erb:23: unterminated string meets end of file
+/Users/jennatauro/Documents/Personal Projects/SoccerManagementApp/app/views/teams/index.html.erb:23: syntax error, unexpected end-of-input, expecting ')'):
+  app/views/teams/index.html.erb:18: syntax error, unexpected '<', expecting ')'
+  app/views/teams/index.html.erb:20: unknown regexp options - tabl
+  app/views/teams/index.html.erb:22: syntax error, unexpected tCONSTANT, expecting ')'
+  app/views/teams/index.html.erb:23: syntax error, unexpected '|', expecting ')'
+  app/views/teams/index.html.erb:23: syntax error, unexpected tCONSTANT, expecting ')'
+  app/views/teams/index.html.erb:23: unterminated string meets end of file
+  app/views/teams/index.html.erb:23: syntax error, unexpected end-of-input, expecting ')'
+
+
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (22.4ms)
+
+
+Started GET "/teams" for 127.0.0.1 at 2014-09-29 23:59:38 -0400
+Processing by TeamsController#index as HTML
+  Rendered teams/index.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 5ms
+
+SyntaxError (/Users/jennatauro/Documents/Personal Projects/SoccerManagementApp/app/views/teams/index.html.erb:18: syntax error, unexpected '<', expecting ')'
+  </tr>
+   ^
+/Users/jennatauro/Documents/Personal Projects/SoccerManagementApp/app/views/teams/index.html.erb:20: unknown regexp options - tabl
+unmatched close parenthesis: /tr>
+<% end );@output_buffer.safe_append='
+</
+/Users/jennatauro/Documents/Personal Projects/SoccerManagementApp/app/views/teams/index.html.erb:22: syntax error, unexpected tCONSTANT, expecting ')'
+...t_buffer.append=( link_to 'Back', teams_path );@output_buffe...
+...                               ^
+/Users/jennatauro/Documents/Personal Projects/SoccerManagementApp/app/views/teams/index.html.erb:23: syntax error, unexpected '|', expecting ')'
+| '.freeze;@output_buffer.appe...
+ ^
+/Users/jennatauro/Documents/Personal Projects/SoccerManagementApp/app/views/teams/index.html.erb:23: syntax error, unexpected tCONSTANT, expecting ')'
+...ffer.append=( link_to 'Register new team', new_team_path );@...
+...                               ^
+/Users/jennatauro/Documents/Personal Projects/SoccerManagementApp/app/views/teams/index.html.erb:23: unterminated string meets end of file
+/Users/jennatauro/Documents/Personal Projects/SoccerManagementApp/app/views/teams/index.html.erb:23: syntax error, unexpected end-of-input, expecting ')'):
+  app/views/teams/index.html.erb:18: syntax error, unexpected '<', expecting ')'
+  app/views/teams/index.html.erb:20: unknown regexp options - tabl
+  app/views/teams/index.html.erb:22: syntax error, unexpected tCONSTANT, expecting ')'
+  app/views/teams/index.html.erb:23: syntax error, unexpected '|', expecting ')'
+  app/views/teams/index.html.erb:23: syntax error, unexpected tCONSTANT, expecting ')'
+  app/views/teams/index.html.erb:23: unterminated string meets end of file
+  app/views/teams/index.html.erb:23: syntax error, unexpected end-of-input, expecting ')'
+
+
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.8ms)
+
+
+Started GET "/teams" for 127.0.0.1 at 2014-09-30 00:00:14 -0400
+Processing by TeamsController#index as HTML
+  [1m[35mTeam Load (11.6ms)[0m  SELECT `teams`.* FROM `teams`
+  Rendered teams/index.html.erb within layouts/application (33.9ms)
+Completed 200 OK in 85ms (Views: 57.8ms | ActiveRecord: 25.8ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-30 00:00:15 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-30 00:00:15 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-30 00:00:15 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-30 00:00:15 -0400
+
+
+Started GET "/assets/teams.js?body=1" for 127.0.0.1 at 2014-09-30 00:00:15 -0400
+
+
+Started GET "/assets/teams.css?body=1" for 127.0.0.1 at 2014-09-30 00:00:15 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-30 00:00:15 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-30 00:00:15 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-30 00:00:15 -0400
+
+
+Started DELETE "/teams/1" for 127.0.0.1 at 2014-09-30 00:00:21 -0400
+Processing by TeamsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"GSTfDK+FPH7DGEGDlESzUJPAYYcJpM4GTpEWxFbMn6w=", "id"=>"1"}
+  [1m[36mTeam Load (41.0ms)[0m  [1mSELECT  `teams`.* FROM `teams`  WHERE `teams`.`id` = 1 LIMIT 1[0m
+  [1m[35m (11.8ms)[0m  BEGIN
+  [1m[36mSQL (35.7ms)[0m  [1mDELETE FROM `teams` WHERE `teams`.`id` = 1[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/teams
+Completed 302 Found in 94ms (ActiveRecord: 89.5ms)
+
+
+Started GET "/teams" for 127.0.0.1 at 2014-09-30 00:00:21 -0400
+Processing by TeamsController#index as HTML
+  [1m[36mTeam Load (0.4ms)[0m  [1mSELECT `teams`.* FROM `teams`[0m
+  Rendered teams/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 52ms (Views: 51.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/teams.css?body=1" for 127.0.0.1 at 2014-09-30 00:00:21 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-30 00:00:21 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-30 00:00:21 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-30 00:00:21 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-30 00:00:21 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-30 00:00:21 -0400
+
+
+Started GET "/assets/teams.js?body=1" for 127.0.0.1 at 2014-09-30 00:00:21 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-30 00:00:21 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-30 00:00:21 -0400
+
+
+Started DELETE "/teams/2" for 127.0.0.1 at 2014-09-30 00:00:24 -0400
+Processing by TeamsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"GSTfDK+FPH7DGEGDlESzUJPAYYcJpM4GTpEWxFbMn6w=", "id"=>"2"}
+  [1m[35mTeam Load (0.3ms)[0m  SELECT  `teams`.* FROM `teams`  WHERE `teams`.`id` = 2 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM `teams` WHERE `teams`.`id` = 2
+  [1m[36m (10.8ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/teams
+Completed 302 Found in 15ms (ActiveRecord: 11.7ms)
+
+
+Started GET "/teams" for 127.0.0.1 at 2014-09-30 00:00:24 -0400
+Processing by TeamsController#index as HTML
+  [1m[35mTeam Load (0.8ms)[0m  SELECT `teams`.* FROM `teams`
+  Rendered teams/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 65ms (Views: 63.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-30 00:00:24 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-30 00:00:24 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-30 00:00:24 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-30 00:00:24 -0400
+
+
+Started GET "/assets/teams.js?body=1" for 127.0.0.1 at 2014-09-30 00:00:24 -0400
+
+
+Started GET "/assets/teams.css?body=1" for 127.0.0.1 at 2014-09-30 00:00:24 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-30 00:00:24 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-30 00:00:24 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-30 00:00:24 -0400
+
+
+Started DELETE "/teams/3" for 127.0.0.1 at 2014-09-30 00:00:27 -0400
+Processing by TeamsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"GSTfDK+FPH7DGEGDlESzUJPAYYcJpM4GTpEWxFbMn6w=", "id"=>"3"}
+  [1m[36mTeam Load (0.4ms)[0m  [1mSELECT  `teams`.* FROM `teams`  WHERE `teams`.`id` = 3 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM `teams` WHERE `teams`.`id` = 3[0m
+  [1m[35m (6.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/teams
+Completed 302 Found in 10ms (ActiveRecord: 6.9ms)
+
+
+Started GET "/teams" for 127.0.0.1 at 2014-09-30 00:00:27 -0400
+Processing by TeamsController#index as HTML
+  [1m[36mTeam Load (0.6ms)[0m  [1mSELECT `teams`.* FROM `teams`[0m
+  Rendered teams/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 67ms (Views: 65.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/teams.css?body=1" for 127.0.0.1 at 2014-09-30 00:00:27 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-30 00:00:27 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-30 00:00:27 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-30 00:00:27 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-30 00:00:27 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-30 00:00:27 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-30 00:00:27 -0400
+
+
+Started GET "/assets/teams.js?body=1" for 127.0.0.1 at 2014-09-30 00:00:27 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-30 00:00:27 -0400
+
+
+Started GET "/teams" for 127.0.0.1 at 2014-09-30 00:00:28 -0400
+Processing by TeamsController#index as HTML
+  [1m[35mTeam Load (0.3ms)[0m  SELECT `teams`.* FROM `teams`
+  Rendered teams/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 81ms (Views: 80.1ms | ActiveRecord: 0.3ms)
