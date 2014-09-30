@@ -4,15 +4,18 @@
   <tr>
     <th>Name</th>
     <th>Text</th>
+    <th colspan="2"></th>
   </tr>
  
-  <% @teams.each do |team| %>
-    <tr>
-      <td><%= team.name %></td>
-      <td><%= team.text %></td>
-    </tr>
-  <% end %>
+<% @teams.each do |team| %>
+  <tr>
+    <td><%= team.name %></td>
+    <td><%= team.text %></td>
+    <td><%= link_to 'Show', team_path(team) %></td>
+    <td><%= link_to 'Edit', edit_team_path(team) %></td>
+  </tr>
+<% end %>
 </table>
 
 <%= link_to 'Back', teams_path %>
-<%= link_to 'Register new team', new_team_path %>
+| <%= link_to 'Register new team', new_team_path %>
