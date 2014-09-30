@@ -2222,3 +2222,287 @@ Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2014-09-30 00:56:21 -
 
 
 Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-30 00:56:21 -0400
+
+
+Started GET "/teams" for 127.0.0.1 at 2014-09-30 00:58:54 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (6.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by TeamsController#index as HTML
+  [1m[35mTeam Load (0.4ms)[0m  SELECT `teams`.* FROM `teams`
+  Rendered teams/index.html.erb within layouts/application (28.8ms)
+Completed 200 OK in 189ms (Views: 154.8ms | ActiveRecord: 18.9ms)
+
+
+Started GET "/teams/4" for 127.0.0.1 at 2014-09-30 00:58:58 -0400
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mTeam Load (0.3ms)[0m  [1mSELECT  `teams`.* FROM `teams`  WHERE `teams`.`id` = 4 LIMIT 1[0m
+  [1m[35mComment Load (0.4ms)[0m  SELECT `comments`.* FROM `comments`  WHERE `comments`.`team_id` = 4
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (33.6ms)
+  Rendered teams/show.html.erb within layouts/application (92.4ms)
+Completed 200 OK in 181ms (Views: 151.6ms | ActiveRecord: 26.3ms)
+
+
+Started POST "/teams/4/comments" for 127.0.0.1 at 2014-09-30 00:59:03 -0400
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GSTfDK+FPH7DGEGDlESzUJPAYYcJpM4GTpEWxFbMn6w=", "comment"=>{"commenter"=>"yo", "body"=>"yo"}, "commit"=>"Create Comment", "team_id"=>"4"}
+  [1m[36mTeam Load (0.5ms)[0m  [1mSELECT  `teams`.* FROM `teams`  WHERE `teams`.`id` = 4 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (25.3ms)[0m  [1mINSERT INTO `comments` (`body`, `commenter`, `created_at`, `team_id`, `updated_at`) VALUES ('yo', 'yo', '2014-09-30 04:59:03', 4, '2014-09-30 04:59:03')[0m
+  [1m[35m (12.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/teams/4
+Completed 302 Found in 44ms (ActiveRecord: 38.0ms)
+
+
+Started GET "/teams/4" for 127.0.0.1 at 2014-09-30 00:59:03 -0400
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mTeam Load (0.4ms)[0m  [1mSELECT  `teams`.* FROM `teams`  WHERE `teams`.`id` = 4 LIMIT 1[0m
+  [1m[35mComment Load (0.5ms)[0m  SELECT `comments`.* FROM `comments`  WHERE `comments`.`team_id` = 4
+  Rendered comments/_comment.html.erb (1.1ms)
+  Rendered comments/_form.html.erb (2.7ms)
+  Rendered teams/show.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 83ms (Views: 80.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/teams.css?body=1" for 127.0.0.1 at 2014-09-30 00:59:03 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-30 00:59:03 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-30 00:59:03 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2014-09-30 00:59:03 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-30 00:59:03 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-30 00:59:03 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-30 00:59:03 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-09-30 00:59:03 -0400
+
+
+Started GET "/assets/teams.js?body=1" for 127.0.0.1 at 2014-09-30 00:59:03 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-30 00:59:03 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-30 00:59:03 -0400
+
+
+Started DELETE "/teams/4/comments/2" for 127.0.0.1 at 2014-09-30 00:59:06 -0400
+Processing by CommentsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"GSTfDK+FPH7DGEGDlESzUJPAYYcJpM4GTpEWxFbMn6w=", "team_id"=>"4", "id"=>"2"}
+Filter chain halted as #<Proc:0x007f87d71a8888@/Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_controller/metal/http_authentication.rb:71> rendered or redirected
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started DELETE "/teams/4/comments/2" for 127.0.0.1 at 2014-09-30 00:59:12 -0400
+Processing by CommentsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"GSTfDK+FPH7DGEGDlESzUJPAYYcJpM4GTpEWxFbMn6w=", "team_id"=>"4", "id"=>"2"}
+  [1m[36mTeam Load (0.4ms)[0m  [1mSELECT  `teams`.* FROM `teams`  WHERE `teams`.`id` = 4 LIMIT 1[0m
+  [1m[35mComment Load (0.5ms)[0m  SELECT  `comments`.* FROM `comments`  WHERE `comments`.`team_id` = 4 AND `comments`.`id` = 2 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM `comments` WHERE `comments`.`id` = 2
+  [1m[36m (16.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/teams/4
+Completed 302 Found in 22ms (ActiveRecord: 17.7ms)
+
+
+Started GET "/teams/4" for 127.0.0.1 at 2014-09-30 00:59:12 -0400
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mTeam Load (0.3ms)[0m  SELECT  `teams`.* FROM `teams`  WHERE `teams`.`id` = 4 LIMIT 1
+  [1m[36mComment Load (0.4ms)[0m  [1mSELECT `comments`.* FROM `comments`  WHERE `comments`.`team_id` = 4[0m
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (2.3ms)
+  Rendered teams/show.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 99ms (Views: 96.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/teams.css?body=1" for 127.0.0.1 at 2014-09-30 00:59:12 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-30 00:59:12 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-30 00:59:12 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-30 00:59:12 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2014-09-30 00:59:12 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-30 00:59:12 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-30 00:59:12 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-09-30 00:59:12 -0400
+
+
+Started GET "/assets/teams.js?body=1" for 127.0.0.1 at 2014-09-30 00:59:12 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-30 00:59:12 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-30 00:59:12 -0400
+
+
+Started GET "/teams" for 127.0.0.1 at 2014-09-30 00:59:47 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by TeamsController#index as HTML
+  [1m[35mTeam Load (0.4ms)[0m  SELECT `teams`.* FROM `teams`
+  Rendered teams/index.html.erb within layouts/application (33.9ms)
+Completed 200 OK in 226ms (Views: 188.7ms | ActiveRecord: 19.5ms)
+
+
+Started GET "/assets/teams.css?body=1" for 127.0.0.1 at 2014-09-30 00:59:48 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-30 00:59:48 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-30 00:59:48 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-30 00:59:48 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-30 00:59:48 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-30 00:59:48 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2014-09-30 00:59:48 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-09-30 00:59:48 -0400
+
+
+Started GET "/assets/teams.js?body=1" for 127.0.0.1 at 2014-09-30 00:59:48 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-30 00:59:48 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-30 00:59:48 -0400
+
+
+Started GET "/teams/4" for 127.0.0.1 at 2014-09-30 00:59:49 -0400
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mTeam Load (0.3ms)[0m  [1mSELECT  `teams`.* FROM `teams`  WHERE `teams`.`id` = 4 LIMIT 1[0m
+  [1m[35mComment Load (0.4ms)[0m  SELECT `comments`.* FROM `comments`  WHERE `comments`.`team_id` = 4
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (83.1ms)
+  Rendered teams/show.html.erb within layouts/application (132.3ms)
+Completed 200 OK in 213ms (Views: 186.6ms | ActiveRecord: 22.9ms)
+
+
+Started GET "/teams" for 127.0.0.1 at 2014-09-30 00:59:52 -0400
+Processing by TeamsController#index as HTML
+  [1m[36mTeam Load (0.3ms)[0m  [1mSELECT `teams`.* FROM `teams`[0m
+  Rendered teams/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 81ms (Views: 79.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/teams" for 127.0.0.1 at 2014-09-30 00:59:53 -0400
+Processing by TeamsController#index as HTML
+  [1m[35mTeam Load (0.3ms)[0m  SELECT `teams`.* FROM `teams`
+  Rendered teams/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 88ms (Views: 87.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/teams/new" for 127.0.0.1 at 2014-09-30 01:00:04 -0400
+Processing by TeamsController#new as HTML
+Filter chain halted as #<Proc:0x007febd257f088@/Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_controller/metal/http_authentication.rb:71> rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/teams/new" for 127.0.0.1 at 2014-09-30 01:00:04 -0400
+Processing by TeamsController#new as HTML
+  Rendered teams/_form.html.erb (4.4ms)
+  Rendered teams/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 84ms (Views: 82.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/teams" for 127.0.0.1 at 2014-09-30 01:00:07 -0400
+Processing by TeamsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GSTfDK+FPH7DGEGDlESzUJPAYYcJpM4GTpEWxFbMn6w=", "team"=>{"name"=>"sfsfsdfas", "text"=>"sdf"}, "commit"=>"Create Team"}
+Filter chain halted as #<Proc:0x007febd257f088@/Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_controller/metal/http_authentication.rb:71> rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/teams" for 127.0.0.1 at 2014-09-30 01:00:07 -0400
+Processing by TeamsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GSTfDK+FPH7DGEGDlESzUJPAYYcJpM4GTpEWxFbMn6w=", "team"=>{"name"=>"sfsfsdfas", "text"=>"sdf"}, "commit"=>"Create Team"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `teams` (`created_at`, `name`, `text`, `updated_at`) VALUES ('2014-09-30 05:00:07', 'sfsfsdfas', 'sdf', '2014-09-30 05:00:07')
+  [1m[36m (5.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/teams/9
+Completed 302 Found in 11ms (ActiveRecord: 5.6ms)
+
+
+Started GET "/teams/9" for 127.0.0.1 at 2014-09-30 01:00:07 -0400
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mTeam Load (0.5ms)[0m  SELECT  `teams`.* FROM `teams`  WHERE `teams`.`id` = 9 LIMIT 1
+  [1m[36mComment Load (0.4ms)[0m  [1mSELECT `comments`.* FROM `comments`  WHERE `comments`.`team_id` = 9[0m
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (2.8ms)
+  Rendered teams/show.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 85ms (Views: 82.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/teams.css?body=1" for 127.0.0.1 at 2014-09-30 01:00:08 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-30 01:00:08 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-30 01:00:08 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-30 01:00:08 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-30 01:00:08 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-30 01:00:08 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-09-30 01:00:08 -0400
+
+
+Started GET "/assets/teams.js?body=1" for 127.0.0.1 at 2014-09-30 01:00:08 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2014-09-30 01:00:08 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-30 01:00:08 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-30 01:00:08 -0400
+
+
+Started GET "/teams" for 127.0.0.1 at 2014-09-30 01:00:11 -0400
+Processing by TeamsController#index as HTML
+  [1m[35mTeam Load (0.3ms)[0m  SELECT `teams`.* FROM `teams`
+  Rendered teams/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 133ms (Views: 132.0ms | ActiveRecord: 0.3ms)

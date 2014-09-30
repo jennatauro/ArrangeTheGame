@@ -1,4 +1,7 @@
 class CommentsController < ApplicationController
+
+  http_basic_authenticate_with name: "jet", password: "secret", only: :destroy
+
   def create
     @team = Team.find(params[:team_id])
     @comment = @team.comments.create(comment_params)

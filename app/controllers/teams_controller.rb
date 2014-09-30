@@ -1,5 +1,7 @@
 class TeamsController < ApplicationController
 
+  http_basic_authenticate_with name: "jet", password: "secret", except: [:index, :show]
+
   def new
     @team = Team.new
   end
