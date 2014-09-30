@@ -2035,3 +2035,61 @@ Processing by TeamsController#index as HTML
   [1m[36mTeam Load (0.3ms)[0m  [1mSELECT `teams`.* FROM `teams`[0m
   Rendered teams/index.html.erb within layouts/application (3.9ms)
 Completed 200 OK in 93ms (Views: 92.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-30 00:52:55 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (10.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 164ms (Views: 152.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/teams.css?body=1" for 127.0.0.1 at 2014-09-30 00:52:56 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-30 00:52:56 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-30 00:52:56 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2014-09-30 00:52:56 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-30 00:52:56 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-30 00:52:56 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-30 00:52:56 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-09-30 00:52:56 -0400
+
+
+Started GET "/assets/teams.js?body=1" for 127.0.0.1 at 2014-09-30 00:52:56 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-30 00:52:56 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-30 00:52:56 -0400
+
+
+Started GET "/teams" for 127.0.0.1 at 2014-09-30 00:52:58 -0400
+Processing by TeamsController#index as HTML
+  [1m[35mTeam Load (0.5ms)[0m  SELECT `teams`.* FROM `teams`
+  Rendered teams/index.html.erb within layouts/application (27.8ms)
+Completed 200 OK in 110ms (Views: 79.6ms | ActiveRecord: 19.9ms)
+
+
+Started GET "/teams/4" for 127.0.0.1 at 2014-09-30 00:53:01 -0400
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mTeam Load (0.5ms)[0m  [1mSELECT  `teams`.* FROM `teams`  WHERE `teams`.`id` = 4 LIMIT 1[0m
+  [1m[35mComment Load (0.6ms)[0m  SELECT `comments`.* FROM `comments`  WHERE `comments`.`team_id` = 4
+  Rendered comments/_comment.html.erb (0.8ms)
+  Rendered comments/_form.html.erb (33.8ms)
+  Rendered teams/show.html.erb within layouts/application (144.1ms)
+Completed 200 OK in 217ms (Views: 193.6ms | ActiveRecord: 20.2ms)
