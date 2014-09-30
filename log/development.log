@@ -1,0 +1,1130 @@
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-29 22:09:00 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 1023ms (Views: 1010.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-29 22:09:01 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-29 22:09:01 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-29 22:09:01 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-29 22:09:01 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-29 22:09:01 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-29 22:09:01 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-29 22:09:01 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-29 22:10:23 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 92ms (Views: 81.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-29 22:10:23 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-29 22:10:23 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-29 22:10:23 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-29 22:10:23 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-29 22:10:23 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-29 22:10:23 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-29 22:10:23 -0400
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2014-09-29 22:10:58 -0400
+
+ActionController::RoutingError (No route matches [GET] "/articles/new"):
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.6ms)
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (9.3ms)
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (41.1ms)
+
+
+Started GET "/teams/new" for 127.0.0.1 at 2014-09-29 22:11:03 -0400
+
+ActionController::RoutingError (uninitialized constant TeamsController):
+  activesupport (4.1.6) lib/active_support/inflector/methods.rb:238:in `const_get'
+  activesupport (4.1.6) lib/active_support/inflector/methods.rb:238:in `block in constantize'
+  activesupport (4.1.6) lib/active_support/inflector/methods.rb:236:in `each'
+  activesupport (4.1.6) lib/active_support/inflector/methods.rb:236:in `inject'
+  activesupport (4.1.6) lib/active_support/inflector/methods.rb:236:in `constantize'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:78:in `controller_reference'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:68:in `controller'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:46:in `call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.6) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (23.9ms)
+
+
+Started GET "/teams/new" for 127.0.0.1 at 2014-09-29 22:12:18 -0400
+
+AbstractController::ActionNotFound (The action 'new' could not be found for TeamsController):
+  actionpack (4.1.6) lib/abstract_controller/base.rb:131:in `process'
+  actionview (4.1.6) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.6) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.6) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.6) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (2.2ms)
+
+
+Started GET "/teams/new" for 127.0.0.1 at 2014-09-29 22:12:59 -0400
+Processing by TeamsController#new as HTML
+Completed 500 Internal Server Error in 14ms
+
+ActionView::MissingTemplate (Missing template teams/new, application/new with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/Users/jennatauro/Documents/Personal Projects/SoccerManagementApp/app/views"
+):
+  actionview (4.1.6) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.1.6) lib/action_view/lookup_context.rb:124:in `find'
+  actionview (4.1.6) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.1.6) lib/action_view/renderer/template_renderer.rb:41:in `determine_template'
+  actionview (4.1.6) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.1.6) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.6) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.6) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.6) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.6) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.6) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.6) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.6) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.6) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.6) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.1.6) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.6) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.6) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.6) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.6) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.6) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.6) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.6) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.6) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.6) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.6) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.6) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.6) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.5ms)
+
+
+Started GET "/teams/new" for 127.0.0.1 at 2014-09-29 22:14:31 -0400
+Processing by TeamsController#new as HTML
+  Rendered teams/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 260ms (Views: 259.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-29 22:14:31 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-29 22:14:31 -0400
+
+
+Started GET "/assets/teams.js?body=1" for 127.0.0.1 at 2014-09-29 22:14:31 -0400
+
+
+Started GET "/assets/teams.css?body=1" for 127.0.0.1 at 2014-09-29 22:14:31 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-29 22:14:31 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-29 22:14:31 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-29 22:14:31 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-29 22:14:31 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-29 22:14:31 -0400
+
+
+Started GET "/teams/new" for 127.0.0.1 at 2014-09-29 22:15:24 -0400
+Processing by TeamsController#new as HTML
+  Rendered teams/new.html.erb within layouts/application (23.6ms)
+Completed 200 OK in 72ms (Views: 71.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-29 22:15:24 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-29 22:15:24 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-29 22:15:24 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-29 22:15:24 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-29 22:15:24 -0400
+
+
+Started GET "/assets/teams.css?body=1" for 127.0.0.1 at 2014-09-29 22:15:24 -0400
+
+
+Started GET "/assets/teams.js?body=1" for 127.0.0.1 at 2014-09-29 22:15:24 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-29 22:15:24 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-29 22:15:24 -0400
+
+
+Started GET "/teams/new" for 127.0.0.1 at 2014-09-29 22:18:31 -0400
+Processing by TeamsController#new as HTML
+  Rendered teams/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 53ms (Views: 52.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-29 22:18:32 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-29 22:18:32 -0400
+
+
+Started GET "/assets/teams.css?body=1" for 127.0.0.1 at 2014-09-29 22:18:32 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-29 22:18:32 -0400
+
+
+Started GET "/assets/teams.js?body=1" for 127.0.0.1 at 2014-09-29 22:18:32 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-29 22:18:32 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-29 22:18:32 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-29 22:18:32 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-29 22:18:32 -0400
+
+
+Started POST "/teams" for 127.0.0.1 at 2014-09-29 22:18:37 -0400
+
+AbstractController::ActionNotFound (The action 'create' could not be found for TeamsController):
+  actionpack (4.1.6) lib/abstract_controller/base.rb:131:in `process'
+  actionview (4.1.6) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.6) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.6) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.6) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.7ms)
+
+
+Started POST "/teams" for 127.0.0.1 at 2014-09-29 22:19:47 -0400
+Processing by TeamsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GSTfDK+FPH7DGEGDlESzUJPAYYcJpM4GTpEWxFbMn6w=", "team"=>{"name"=>"Blah", "text"=>"hi"}, "commit"=>"Save Team"}
+  Rendered text template (0.0ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (112.8ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (29.6ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateTeams (20140930022021)
+  [1m[35m (24.2ms)[0m  CREATE TABLE `teams` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `text` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (5.9ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20140930022021')
+  [1m[36m (6.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+
+
+Started POST "/teams" for 127.0.0.1 at 2014-09-29 22:24:46 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by TeamsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GSTfDK+FPH7DGEGDlESzUJPAYYcJpM4GTpEWxFbMn6w=", "team"=>{"name"=>"Blah", "text"=>"hi"}, "commit"=>"Save Team"}
+Completed 500 Internal Server Error in 33ms
+
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  app/controllers/teams_controller.rb:7:in `create'
+
+
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (26.5ms)
+
+
+Started POST "/teams" for 127.0.0.1 at 2014-09-29 22:27:33 -0400
+Processing by TeamsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GSTfDK+FPH7DGEGDlESzUJPAYYcJpM4GTpEWxFbMn6w=", "team"=>{"name"=>"Blah", "text"=>"hi"}, "commit"=>"Save Team"}
+Completed 500 Internal Server Error in 22ms
+
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  app/controllers/teams_controller.rb:7:in `create'
+
+
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (25.1ms)
+
+
+Started POST "/teams" for 127.0.0.1 at 2014-09-29 22:28:02 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by TeamsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GSTfDK+FPH7DGEGDlESzUJPAYYcJpM4GTpEWxFbMn6w=", "team"=>{"name"=>"Blah", "text"=>"hi"}, "commit"=>"Save Team"}
+Completed 500 Internal Server Error in 33ms
+
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  app/controllers/teams_controller.rb:7:in `create'
+
+
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.7ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2014-09-29 22:29:22 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+
+ActionController::RoutingError (No route matches [GET] "/articles/new"):
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (11.3ms)
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (41.7ms)
+
+
+Started GET "/teams/new" for 127.0.0.1 at 2014-09-29 22:29:26 -0400
+Processing by TeamsController#new as HTML
+  Rendered teams/new.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 123ms (Views: 112.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-29 22:29:27 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-29 22:29:27 -0400
+
+
+Started GET "/assets/teams.css?body=1" for 127.0.0.1 at 2014-09-29 22:29:27 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-29 22:29:27 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-29 22:29:27 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-29 22:29:27 -0400
+
+
+Started GET "/assets/teams.js?body=1" for 127.0.0.1 at 2014-09-29 22:29:27 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-29 22:29:27 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-29 22:29:27 -0400
+
+
+Started POST "/teams" for 127.0.0.1 at 2014-09-29 22:29:32 -0400
+Processing by TeamsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GSTfDK+FPH7DGEGDlESzUJPAYYcJpM4GTpEWxFbMn6w=", "team"=>{"name"=>"Hi", "text"=>"hello"}, "commit"=>"Save Team"}
+Completed 500 Internal Server Error in 23ms
+
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  app/controllers/teams_controller.rb:7:in `create'
+
+
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.4ms)
+
+
+Started POST "/teams" for 127.0.0.1 at 2014-09-29 22:30:19 -0400
+Processing by TeamsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GSTfDK+FPH7DGEGDlESzUJPAYYcJpM4GTpEWxFbMn6w=", "team"=>{"name"=>"Hi", "text"=>"hello"}, "commit"=>"Save Team"}
+Completed 500 Internal Server Error in 5ms
+
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  app/controllers/teams_controller.rb:7:in `create'
+
+
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.8ms)
+
+
+Started POST "/teams" for 127.0.0.1 at 2014-09-29 22:31:03 -0400
+Processing by TeamsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GSTfDK+FPH7DGEGDlESzUJPAYYcJpM4GTpEWxFbMn6w=", "team"=>{"name"=>"Hi", "text"=>"hello"}, "commit"=>"Save Team"}
+Completed 500 Internal Server Error in 23ms
+
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  app/controllers/teams_controller.rb:7:in `create'
+
+
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.8ms)
+
+
+Started POST "/teams" for 127.0.0.1 at 2014-09-29 22:31:41 -0400
+Processing by TeamsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GSTfDK+FPH7DGEGDlESzUJPAYYcJpM4GTpEWxFbMn6w=", "team"=>{"name"=>"Blah", "text"=>"hi"}, "commit"=>"Save Team"}
+Completed 500 Internal Server Error in 5ms
+
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  app/controllers/teams_controller.rb:7:in `create'
+
+
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.5ms)
+
+
+Started POST "/teams" for 127.0.0.1 at 2014-09-29 22:32:27 -0400
+Processing by TeamsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GSTfDK+FPH7DGEGDlESzUJPAYYcJpM4GTpEWxFbMn6w=", "team"=>{"name"=>"Blah", "text"=>"hi"}, "commit"=>"Save Team"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (23.6ms)[0m  [1mINSERT INTO `teams` (`created_at`, `name`, `text`, `updated_at`) VALUES ('2014-09-30 02:32:28', 'Blah', 'hi', '2014-09-30 02:32:28')[0m
+  [1m[35m (0.9ms)[0m  COMMIT
+Redirected to http://localhost:3000/teams/1
+Completed 302 Found in 42ms (ActiveRecord: 26.7ms)
+
+
+Started GET "/teams/1" for 127.0.0.1 at 2014-09-29 22:32:28 -0400
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered teams/show.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <p>
+    2:   <strong>Name:</strong>
+    3:   <%= @team.name %>
+    4: </p>
+    5:  
+    6: <p>
+  app/views/teams/show.html.erb:3:in `_app_views_teams_show_html_erb___1936213143225841163_70181069884740'
+
+
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (13.7ms)
+
+
+Started POST "/teams" for 127.0.0.1 at 2014-09-29 22:33:14 -0400
+Processing by TeamsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GSTfDK+FPH7DGEGDlESzUJPAYYcJpM4GTpEWxFbMn6w=", "team"=>{"name"=>"Blah", "text"=>"hi"}, "commit"=>"Save Team"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `teams` (`created_at`, `name`, `text`, `updated_at`) VALUES ('2014-09-30 02:33:14', 'Blah', 'hi', '2014-09-30 02:33:14')
+  [1m[36m (11.7ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/teams/2
+Completed 302 Found in 16ms (ActiveRecord: 12.2ms)
+
+
+Started GET "/teams/2" for 127.0.0.1 at 2014-09-29 22:33:14 -0400
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendered teams/show.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <p>
+    2:   <strong>Name:</strong>
+    3:   <%= @team.name %>
+    4: </p>
+    5:  
+    6: <p>
+  app/views/teams/show.html.erb:3:in `_app_views_teams_show_html_erb___1936213143225841163_70181069884740'
+
+
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (12.3ms)
+
+
+Started POST "/teams" for 127.0.0.1 at 2014-09-29 22:34:42 -0400
+Processing by TeamsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GSTfDK+FPH7DGEGDlESzUJPAYYcJpM4GTpEWxFbMn6w=", "team"=>{"name"=>"Blah", "text"=>"hi"}, "commit"=>"Save Team"}
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `teams` (`created_at`, `name`, `text`, `updated_at`) VALUES ('2014-09-30 02:34:42', 'Blah', 'hi', '2014-09-30 02:34:42')[0m
+  [1m[35m (6.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/teams/3
+Completed 302 Found in 11ms (ActiveRecord: 7.2ms)
+
+
+Started GET "/teams/3" for 127.0.0.1 at 2014-09-29 22:34:42 -0400
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"3"}
+  Rendered teams/show.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    1: <p>
+    2:   <strong>Name:</strong>
+    3:   <%= @team.title %>
+    4: </p>
+    5:  
+    6: <p>
+  app/views/teams/show.html.erb:3:in `_app_views_teams_show_html_erb___1936213143225841163_70181105601360'
+
+
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (13.7ms)
+
+
+Started POST "/teams" for 127.0.0.1 at 2014-09-29 22:39:25 -0400
+Processing by TeamsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GSTfDK+FPH7DGEGDlESzUJPAYYcJpM4GTpEWxFbMn6w=", "team"=>{"name"=>"Blah", "text"=>"hi"}, "commit"=>"Save Team"}
+  [1m[36m (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO `teams` (`created_at`, `name`, `text`, `updated_at`) VALUES ('2014-09-30 02:39:25', 'Blah', 'hi', '2014-09-30 02:39:25')
+  [1m[36m (16.8ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/teams/4
+Completed 302 Found in 23ms (ActiveRecord: 18.8ms)
+
+
+Started GET "/teams/4" for 127.0.0.1 at 2014-09-29 22:39:25 -0400
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendered teams/show.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (undefined method `text' for nil:NilClass):
+    2:  
+    3: <p>
+    4:   <strong>Text:</strong>
+    5:   <%= @team.text %>
+    6: </p>
+  app/views/teams/show.html.erb:5:in `_app_views_teams_show_html_erb___1936213143225841163_70181106767900'
+
+
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.9ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2014-09-29 22:39:59 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+
+ActionController::RoutingError (No route matches [GET] "/articles/new"):
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (9.3ms)
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (41.1ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2014-09-29 22:40:06 -0400
+
+ActionController::RoutingError (No route matches [GET] "/articles/new"):
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (25.9ms)
+
+
+Started GET "/teams/new" for 127.0.0.1 at 2014-09-29 22:40:12 -0400
+Processing by TeamsController#new as HTML
+  Rendered teams/new.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 123ms (Views: 112.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-29 22:40:12 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-29 22:40:12 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-29 22:40:12 -0400
+
+
+Started GET "/assets/teams.css?body=1" for 127.0.0.1 at 2014-09-29 22:40:12 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-29 22:40:12 -0400
+
+
+Started GET "/assets/teams.js?body=1" for 127.0.0.1 at 2014-09-29 22:40:12 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-29 22:40:12 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-29 22:40:12 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-29 22:40:12 -0400
+
+
+Started POST "/teams" for 127.0.0.1 at 2014-09-29 22:40:17 -0400
+Processing by TeamsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GSTfDK+FPH7DGEGDlESzUJPAYYcJpM4GTpEWxFbMn6w=", "team"=>{"name"=>"f", "text"=>"t"}, "commit"=>"Save Team"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `teams` (`created_at`, `name`, `text`, `updated_at`) VALUES ('2014-09-30 02:40:17', 'f', 't', '2014-09-30 02:40:17')[0m
+  [1m[35m (11.8ms)[0m  COMMIT
+Redirected to http://localhost:3000/teams/5
+Completed 302 Found in 46ms (ActiveRecord: 31.7ms)
+
+
+Started GET "/teams/5" for 127.0.0.1 at 2014-09-29 22:40:17 -0400
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"5"}
+  Rendered teams/show.html.erb within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <p>
+    2:   <strong>Name:</strong>
+    3:   <%= @team.name %>
+    4: </p>
+    5:  
+    6: <p>
+  app/views/teams/show.html.erb:3:in `_app_views_teams_show_html_erb__1975218258383717837_70280186134380'
+
+
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/jennatauro/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (15.9ms)
+
+
+Started POST "/teams" for 127.0.0.1 at 2014-09-29 22:41:32 -0400
+Processing by TeamsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GSTfDK+FPH7DGEGDlESzUJPAYYcJpM4GTpEWxFbMn6w=", "team"=>{"name"=>"f", "text"=>"t"}, "commit"=>"Save Team"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `teams` (`created_at`, `name`, `text`, `updated_at`) VALUES ('2014-09-30 02:41:32', 'f', 't', '2014-09-30 02:41:32')
+  [1m[36m (5.6ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/teams/6
+Completed 302 Found in 33ms (ActiveRecord: 24.3ms)
+
+
+Started GET "/teams/6" for 127.0.0.1 at 2014-09-29 22:41:32 -0400
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mTeam Load (8.1ms)[0m  SELECT  `teams`.* FROM `teams`  WHERE `teams`.`id` = 6 LIMIT 1
+  Rendered teams/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 67ms (Views: 55.7ms | ActiveRecord: 8.1ms)
+
+
+Started GET "/assets/teams.css?body=1" for 127.0.0.1 at 2014-09-29 22:41:32 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-29 22:41:32 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-29 22:41:32 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-29 22:41:32 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-29 22:41:32 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-29 22:41:32 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-29 22:41:32 -0400
+
+
+Started GET "/assets/teams.js?body=1" for 127.0.0.1 at 2014-09-29 22:41:32 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-29 22:41:32 -0400
+
+
+Started GET "/teams" for 127.0.0.1 at 2014-09-29 22:43:13 -0400
+Processing by TeamsController#index as HTML
+  [1m[36mTeam Load (0.3ms)[0m  [1mSELECT `teams`.* FROM `teams`[0m
+  Rendered teams/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 60ms (Views: 56.4ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-29 22:43:13 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-29 22:43:13 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-29 22:43:13 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-29 22:43:13 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-29 22:43:13 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-29 22:43:13 -0400
+
+
+Started GET "/assets/teams.js?body=1" for 127.0.0.1 at 2014-09-29 22:43:13 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-29 22:43:13 -0400
+
+
+Started GET "/assets/teams.css?body=1" for 127.0.0.1 at 2014-09-29 22:43:13 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-29 22:45:55 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 55ms (Views: 54.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-29 22:45:55 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-29 22:45:55 -0400
+
+
+Started GET "/assets/teams.css?body=1" for 127.0.0.1 at 2014-09-29 22:45:55 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-29 22:45:55 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-29 22:45:55 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-29 22:45:55 -0400
+
+
+Started GET "/assets/teams.js?body=1" for 127.0.0.1 at 2014-09-29 22:45:55 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-29 22:45:56 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-29 22:45:56 -0400
+
+
+Started GET "/teams" for 127.0.0.1 at 2014-09-29 22:45:57 -0400
+Processing by TeamsController#index as HTML
+  [1m[35mTeam Load (0.4ms)[0m  SELECT `teams`.* FROM `teams`
+  Rendered teams/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 52ms (Views: 51.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/teams" for 127.0.0.1 at 2014-09-29 22:45:59 -0400
+Processing by TeamsController#index as HTML
+  [1m[36mTeam Load (0.6ms)[0m  [1mSELECT `teams`.* FROM `teams`[0m
+  Rendered teams/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 63ms (Views: 61.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/teams" for 127.0.0.1 at 2014-09-29 22:46:02 -0400
+Processing by TeamsController#index as HTML
+  [1m[35mTeam Load (0.3ms)[0m  SELECT `teams`.* FROM `teams`
+  Rendered teams/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 98ms (Views: 97.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/teams/new" for 127.0.0.1 at 2014-09-29 22:46:03 -0400
+Processing by TeamsController#new as HTML
+  Rendered teams/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 58ms (Views: 57.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/teams" for 127.0.0.1 at 2014-09-29 22:46:08 -0400
+Processing by TeamsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GSTfDK+FPH7DGEGDlESzUJPAYYcJpM4GTpEWxFbMn6w=", "team"=>{"name"=>"Jenna", "text"=>"hello"}, "commit"=>"Save Team"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO `teams` (`created_at`, `name`, `text`, `updated_at`) VALUES ('2014-09-30 02:46:08', 'Jenna', 'hello', '2014-09-30 02:46:08')
+  [1m[36m (12.6ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/teams/7
+Completed 302 Found in 20ms (ActiveRecord: 13.8ms)
+
+
+Started GET "/teams/7" for 127.0.0.1 at 2014-09-29 22:46:08 -0400
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mTeam Load (0.3ms)[0m  SELECT  `teams`.* FROM `teams`  WHERE `teams`.`id` = 7 LIMIT 1
+  Rendered teams/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 57ms (Views: 55.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/teams.css?body=1" for 127.0.0.1 at 2014-09-29 22:46:08 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-29 22:46:08 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-29 22:46:08 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-29 22:46:08 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-29 22:46:08 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-29 22:46:08 -0400
+
+
+Started GET "/assets/teams.js?body=1" for 127.0.0.1 at 2014-09-29 22:46:08 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-29 22:46:08 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-29 22:46:08 -0400
+
+
+Started GET "/teams" for 127.0.0.1 at 2014-09-29 22:46:10 -0400
+Processing by TeamsController#index as HTML
+  [1m[36mTeam Load (0.7ms)[0m  [1mSELECT `teams`.* FROM `teams`[0m
+  Rendered teams/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 67ms (Views: 65.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/teams" for 127.0.0.1 at 2014-09-29 22:46:12 -0400
+Processing by TeamsController#index as HTML
+  [1m[35mTeam Load (0.4ms)[0m  SELECT `teams`.* FROM `teams`
+  Rendered teams/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 63ms (Views: 62.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-29 22:46:17 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 65ms (Views: 64.2ms | ActiveRecord: 0.0ms)
