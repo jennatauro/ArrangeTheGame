@@ -1,5 +1,5 @@
 class Team < ActiveRecord::Base
-	has_many :comments, dependent: :destroy
+	has_many :players, dependent: :destroy
 	validates :name, presence: true,
                     length: { minimum: 5 }
 end

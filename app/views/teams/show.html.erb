@@ -8,11 +8,11 @@
   <%= @team.text %>
 </p>
 
-<h2>Comments</h2>
-<%= render @team.comments %>
+<h2>Players</h2>
+<%= render @team.players %>
 
-<h2>Add a comment:</h2>
-<%= render "comments/form" %>
+<h2>Add a player:</h2>
+<%= render "players/form" %>
 
 <%= link_to 'Back', teams_path %>
 | <%= link_to 'Edit', edit_team_path(@team) %>

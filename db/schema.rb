@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140930041303) do
+ActiveRecord::Schema.define(version: 20141001193624) do
 
   create_table "comments", force: true do |t|
     t.string   "commenter"
@@ -22,6 +22,15 @@ ActiveRecord::Schema.define(version: 20140930041303) do
   end
 
   add_index "comments", ["team_id"], name: "index_comments_on_team_id", using: :btree
+
+  create_table "players", force: true do |t|
+    t.string   "name"
+    t.integer  "team_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "players", ["team_id"], name: "index_players_on_team_id", using: :btree
 
   create_table "teams", force: true do |t|
     t.string   "name"
