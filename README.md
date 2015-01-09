@@ -1,2 +1,2 @@
-SoccerManagementTool
+ArrangeTheGame
 ====================
